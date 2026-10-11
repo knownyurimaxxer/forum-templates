@@ -8,8 +8,12 @@ body {
     }
 
     .nn-fruity-post {
+        display: flex;
+        flex-flow: column;
+        gap: 1.5rem;
+        position: relative;
         max-width: 600px;
-        margin: 0 auto;
+        margin: 0 auto 30px auto;
         padding: 2rem;
         background: var(--nn-fruity-bg);
         color: var(--nn-fruity-text);
@@ -45,20 +49,22 @@ body {
 
             .nn-fruity-title {
                 font-size: 40px;
-                line-height: 55px;
+                line-height: 40px;
                 text-transform: uppercase;
                 font-style: italic;
             }
         }
 
         .nn-fruity-content {
-            margin: 1.5rem 0;
             font-size: 16px;
             line-height: 22px;
             text-align: justify;
         }
 
         .nn-fruity-credits {
+            position: absolute;
+            bottom: -30px;
+            width: calc(100% - 3rem);
             text-align: center;
 
             a {
