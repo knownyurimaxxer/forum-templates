@@ -1,8 +1,10 @@
 body {
+    --nn-fruity-bg: #212121;
+    --nn-fruity-text: #eaeaea;
 
     &.mode-dark {
         --nn-fruity-bg: #eaeaea;
-        --nn-fruity-text: #212121
+        --nn-fruity-text: #212121;
     }
 
     .nn-fruity-post {
