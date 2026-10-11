@@ -1,9 +1,9 @@
 body {
     --nn-fruity-bg: #3d3d3d;
-    --nn-fruity-text: #eaeaea;
+    --nn-fruity-text: #ddd;
 
     &.mode-dark {
-        --nn-fruity-bg: #eaeaea;
+        --nn-fruity-bg: #ddd;
         --nn-fruity-text: #3d3d3d;
     }
 
