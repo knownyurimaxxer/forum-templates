@@ -36,6 +36,7 @@ body {
 
                 img {
                     display: block;
+                    width: 80px;
                     border: .5rem solid var(--nn-fruity-bg);
                     border-radius: 100%;
                     aspect-ratio: 1 / 1;
