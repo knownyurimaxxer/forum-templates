@@ -1,13 +1,13 @@
 body {
-    --fuity-template-bg: #3d3d3d;
-    --fuity-template-text: #ddd;
+    --fruity-template-bg: #3d3d3d;
+    --fruity-template-text: #ddd;
 
     &.mode-dark {
-        --fuity-template-bg: #ddd;
-        --fuity-template-text: #3d3d3d;
+        --fruity-template-bg: #ddd;
+        --fruity-template-text: #3d3d3d;
     }
 
-    .fuity-template-post {
+    .fruity-template-post {
         display: flex;
         flex-flow: column;
         gap: 1.5rem;
@@ -15,25 +15,25 @@ body {
         max-width: 600px;
         margin: 0 auto 30px auto;
         padding: 2rem;
-        background: var(--fuity-template-bg);
-        color: var(--fuity-template-text);
+        background: var(--fruity-template-bg);
+        color: var(--fruity-template-text);
         border-radius: 15px;
 
-        .fuity-template-title,
-        .fuity-template-credits a {
+        .fruity-template-title,
+        .fruity-template-credits a {
                 background: linear-gradient(90deg, var(--color-02) 0%, rgb(from var(--color-01) r g b/60%) 100%);
                 color: transparent;
                 background-clip: text;
                 font-weight: 900;
         }
 
-        .fuity-template-header {
+        .fruity-template-header {
             display: grid;
             grid-template-columns: minmax(0, 100px) minmax(0, 1fr);
             align-items: center;
             gap: 0 1rem;
 
-            .fuity-template-image {
+            .fruity-template-image {
                 width: 100px;
                 background: linear-gradient(90deg, var(--color-02) 0%, rgb(from var(--color-01) r g b/60%) 100%);
                 border-radius: 100%;
@@ -43,37 +43,50 @@ body {
 
                 img {
                     display: block;
-                    border: 4px solid var(--fuity-template-bg);
+                    border: 4px solid var(--fruity-template-bg);
                     border-radius: 100%;
                     width: 100%;
                     aspect-ratio: 1 / 1;
                 }
             }
 
-            .fuity-template-title {
+            .fruity-template-title {
                 font-size: 35px;
                 line-height: 35px;
                 text-transform: uppercase;
                 font-style: italic;
+                justify-self: flex-start;
+                align-self: flex-end;
             }
 
-            .fuity-template-extra {
+            .fruity-template-extra {
                 text-transform: uppercase;
                 font-weight: 700;
                 opacity: .7;
+                justify-self: flex-start;
+                align-self: flex-start;
             }
         }
 
-        .fuity-template-content {
+        .fruity-template-content {
             font-size: 16px;
             line-height: 22px;
             text-align: justify;
+
+            .fruity-template-content-header {
+                font-weight: 900;
+                font-style: italic;
+                text-transform: uppercase;
+                background: linear-gradient(90deg, var(--color-02) 0%, var(--color-01) 100%);
+                background-clip: text;
+                -webkit-text-fill-color: #fff0;
+            }
         }
 
-        .fuity-template-credits {
+        .fruity-template-credits {
             position: absolute;
             bottom: -30px;
-            width: calc(100% - 3rem);
+            width: calc(100% - 4rem);
             text-align: center;
 
             a {
@@ -84,7 +97,7 @@ body {
 }
 
 @supports ((-webkit-hyphens:auto) or (hyphens:auto)) {
-  body .fuity-template-post .fuity-template-content {
+  body .fruity-template-post .fruity-template-content {
     -webkit-hyphens: auto;
     hyphens: auto;
   }
