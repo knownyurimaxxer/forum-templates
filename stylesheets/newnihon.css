@@ -54,6 +54,7 @@ body {
                 font-size: 35px;
                 line-height: 35px;
                 text-transform: uppercase;
+                font-weight: 900;
                 font-style: italic;
                 justify-self: flex-start;
                 align-self: flex-end;
@@ -61,7 +62,7 @@ body {
 
             .fruity-template-extra {
                 text-transform: uppercase;
-                font-weight: 700;
+                font-weight: 900;
                 opacity: .7;
                 justify-self: flex-start;
                 align-self: flex-start;
@@ -73,6 +74,11 @@ body {
             line-height: 22px;
             text-align: justify;
 
+            a,
+            a:hover {
+                color: var(--fruity-template-text);
+            }
+
             .fruity-template-content-header {
                 font-weight: 900;
                 font-style: italic;
@@ -80,6 +86,26 @@ body {
                 background: linear-gradient(90deg, var(--color-02) 0%, var(--color-01) 100%);
                 background-clip: text;
                 -webkit-text-fill-color: #fff0;
+            }
+
+            .fruity-template-content-bold {
+                font-weight: 700;
+                background: linear-gradient(90deg, var(--color-02) 0%, var(--color-01) 100%);
+                background-clip: text;
+                -webkit-text-fill-color: #fff0;
+            }
+
+            .fruity-template-content-list {
+                display: grid;
+                gap: .5rem;
+                list-style: decimal-leading-zero;
+                margin: .5rem 0 0 2rem;
+
+                li {
+                    &::marker {
+                        font-weight: 700;
+                    }
+                }
             }
         }
 
