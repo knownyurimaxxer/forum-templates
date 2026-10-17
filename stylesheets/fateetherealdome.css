@@ -55,26 +55,6 @@ html {
                     border: 1px solid var(--accent5);
                     border-radius: 14px 2px 14px 2px;
 
-                    &::before,
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        width: 11px;
-                        aspect-ratio: 1 / 1;
-                        border-radius: 100%;
-                        background: var(--accent5);
-                    }
-
-                    &::before {
-                        top: -6px;
-                        left: -6px;
-                    }
-
-                    &::after {
-                        bottom: -6px;
-                        right: -6px;
-                    }
-
                     img {
                         display: block;
                         width: 100%;
